@@ -13,6 +13,10 @@
 body{
     margin: 0%;
 }
+.helloworld{
+    background-image: linear-gradient(to right, white 70%, rgb(194, 187, 187) 30%);
+    height: 90vh;
+}
 nav{
     margin-bottom: 6vh;   
 }
@@ -21,10 +25,11 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-aside{
+.sociallinks{
     margin: 0 5vh 0 0;
 }
 .menu{
+    position: absolute;
     display:none;
     flex-direction: column;
     background-color: white;
@@ -62,4 +67,13 @@ header {
 }
 header h1{
     margin-bottom: 3vh;
+    font-size: 5vh;
+}
+picture{
+    position: relative;
+}
+picture img{
+    position: absolute;
+    left: 60%;
+    
 }
