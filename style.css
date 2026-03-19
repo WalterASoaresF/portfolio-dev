@@ -1,0 +1,42 @@
+:root{
+    --primary: #633724;
+    --primarydark: #39190B;
+    --secondary: #B89180;
+    --secondarydark: #8E5F4B;
+    --accent: #331001;
+    --light: #E3DAD6;
+}
+
+*{
+    margin:0%;
+}
+body{
+    margin: 0%;
+}
+.menu{
+    display:none;
+    flex-direction: column;
+    background-color: white;
+    padding: 2vh;
+}
+.menu-toggle{
+    max-width: 10vw;
+    width: 100%;
+    margin: 2vh;
+
+}
+.menu-toggle img{
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+
+}
+.menu.active{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: space-around;
+    list-style: none;
+
+}
