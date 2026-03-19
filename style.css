@@ -13,16 +13,21 @@
 body{
     margin: 0%;
 }
+nav{
+    margin-bottom: 5vh;
+}
 .menu{
     display:none;
     flex-direction: column;
     background-color: white;
-    padding: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    height: 20vw;
 }
 .menu-toggle{
     max-width: 10vw;
     width: 100%;
-    margin: 2vh;
+    margin: 3vh;
 
 }
 .menu-toggle img{
@@ -33,10 +38,20 @@ body{
 
 }
 .menu.active{
+    max-height: 20vh;
     display: flex;
     flex-direction: column;
-    text-decoration: none;
+    margin-left: 3vh;
     justify-content: space-around;
     list-style: none;
-
+}
+header {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 3vh;
+    justify-content: center;
+}
+header h1{
+    margin-bottom: 3vh;
 }
