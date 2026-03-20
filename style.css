@@ -102,6 +102,19 @@ figure img{
     border-radius: 2vw;
     border-color: beige;
 }
+#aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vw;
+}
+#aboutme p{
+    width: 80%;
+    margin: 0 auto;
+}
+#aboutme h2{
+    margin-bottom: 8vw;
+}
 #carousel{
     display: flex;
     gap: 12px;
