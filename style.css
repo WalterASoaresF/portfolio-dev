@@ -28,7 +28,9 @@ nav{
     align-items: center;
 }
 .sociallinks{
-    margin: 0 5vh 0 0;
+    display: flex;
+    margin: 0 3vh 0 0;
+    gap:4vw;
 }
 .menu{
     position: absolute;
@@ -92,10 +94,24 @@ figure img{
     justify-content: space-around;
     height: 100vh;
     align-items: center;
+    margin-bottom: 12vw;
 }
 #interest{
     width: 80%;
     height: 12vh;
     border-radius: 2vw;
     border-color: beige;
+}
+#carousel{
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+}
+#carousel img {
+  width: 80%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  border-radius: 10px;
 }
