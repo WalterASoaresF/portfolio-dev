@@ -128,3 +128,10 @@ figure img{
   scroll-snap-align: center;
   border-radius: 10px;
 }
+
+footer{
+    margin-top: 10vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(216, 203, 203) ;
+}
