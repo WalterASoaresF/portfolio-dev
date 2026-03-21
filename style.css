@@ -1,23 +1,13 @@
-:root{
-    --primary: #633724;
-    --primarydark: #39190B;
-    --secondary: #B89180;
-    --secondarydark: #8E5F4B;
-    --accent: #331001;
-    --light: #E3DAD6;
-}
-
 *{
-    margin:0%;
+    margin:0;
+    scroll-behavior: smooth;
 }
-body{
-    margin: 0%;
-}
-.helloworld{
+#helloworld{
     background-image: linear-gradient(to right, white 70%, rgb(216, 203, 203) 30%);
     height: 90vh;
     position: relative;
     margin-bottom: 10vw;
+    overflow: hidden;
 }
 nav{
     margin-bottom: 6vh;   
@@ -74,46 +64,67 @@ header h1{
     font-size: 5vh;
 }
 figure{
-    position: absolute;
+    overflow: hidden;
+    max-width: 100%;
     width: 65vw;
     height: auto;
-    left: 40%;
-    top:45%;
-    transform: translateX(-40%);
-    aspect-ratio: 1 / 1.3;
+    aspect-ratio: 1 / 1.5;
+    margin: 5vh 8vw auto auto;
 }
 figure img{
     display: block;
     object-fit: cover;
     width: 100%;
     height: 100%;
+    box-shadow: 1vw 1vw 1vw rgb(190, 188, 188);
+    border-radius: 0.2vw;
 }
-.keyinterests{
+#keyinterests{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100vh;
+    height: 110vh;
     align-items: center;
     margin-bottom: 12vw;
 }
-#interest{
+.interest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
-    height: 12vh;
+    height: 14vh;
     border-radius: 2vw;
-    border-color: beige;
+    border: 0.7vw solid black;
+    box-shadow: 0.6vw 0.6vw 0 0 rgb(181, 180, 180);
+    background-color: grey;
+}
+.interest h3{
+    margin: auto;
+    margin-bottom: 0;
+
+}
+.interest p{
+    margin:auto;
+    margin-top: 1.5vw;
+    width: 90%;
+}
+main{
+    background-color: rgb(216, 203, 203);
+    padding-bottom: 10vw;
 }
 #aboutme{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
+    background-color:rgb(216, 203, 203) ;
 }
 #aboutme p{
     width: 80%;
     margin: 0 auto;
 }
 #aboutme h2{
-    margin-bottom: 8vw;
+    margin: 4vw auto;
 }
 #carousel{
     display: flex;
@@ -130,8 +141,7 @@ figure img{
 }
 
 footer{
-    margin-top: 10vw;
     display: flex;
     justify-content: center;
-    background-color: rgb(216, 203, 203) ;
+    background-color: white ;
 }
