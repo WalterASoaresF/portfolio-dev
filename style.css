@@ -19,7 +19,7 @@ nav{
 }
 .sociallinks{
     display: flex;
-    margin: 0 3vh 0 0;
+    margin: 0 2vh 0 0;
     gap:4vw;
     height: 5vw;
 }
@@ -34,7 +34,12 @@ nav{
     padding-left: 2vh;
     padding-right: 2vh;
     height: 20vw;
+    top: 8vh;
     background-color: white;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
 }
 .menu-toggle{
     max-width: 10vw;
@@ -53,7 +58,7 @@ nav{
     max-height: 20vh;
     display: flex;
     flex-direction: column;
-    margin-left: 2vh;
+    margin-left: 1vh;
     justify-content: space-around;
     list-style: none;
 }
@@ -84,13 +89,27 @@ figure img{
     box-shadow: 1vw 1vw 1vw rgb(190, 188, 188);
     border-radius: 0.2vw;
 }
+#text h1{
+    font-size: 1.5rem;
+}
+#text p{
+    display: none;
+}
 #keyinterests{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 130vh;
     align-items: center;
-    margin-bottom: 12vw;
+    height: 130vh;
+    margin-bottom: 10vw;
+}
+#interestbox{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6vw;
 }
 .interest{
     display: flex;
@@ -151,7 +170,7 @@ footer{
     background-color: white ;
 }
 
-@media (min-width:700px){
+@media screen and (min-width:600px){
 #helloworld{
     height: 120vh;
 }
@@ -195,4 +214,107 @@ figure img{
   flex-shrink: 0;
   scroll-snap-align: center;
   border-radius: 10px;
+}
+@media screen and (min-width:1024px){
+#helloworld{
+    height: 110vh;
+}
+.menu-toggle{
+    display: none;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    position: static;
+    height: 3vw;
+    width: 40%;
+    list-style: none;
+    justify-content: space-around;
+}
+.menu li{
+    margin-top: 3%;
+}
+menu li a{
+    font-family: 'Courier New', Courier, monospace;
+}
+.topbar{
+    background-color: white;
+}
+.sociallinks{
+    height: 2vw;
+    width: 32%;
+    justify-content: right;
+    gap: 2vw;
+}
+.sociallinks a{
+    margin-top: 1%;
+}
+.presentation{
+    display: flex;
+    align-items: flex-start;
+}
+figure{
+    border-radius: 10%;
+    aspect-ratio: auto;
+    width: 30vw;
+    margin-top: 8%;
+    margin-right: 10vw;
+}
+header{
+    margin: 20vh auto auto 10vw;
+}
+header p{
+    max-width: 30vw;
+}
+#text{
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+#text h1{
+    font-size: 3rem;
+}
+#text p{
+    display: block;
+    font-size: 1.5rem;
+}
+#keyinterests{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 80vh;
+    margin-bottom: 10vw;
+}
+#interestbox{
+    height:30%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    max-width: 60vw;
+    align-items: center;
+    margin-top: 6vw;
+}
+.interest{
+    height: 12vw;
+    width: 15VW;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw;
+    border: 0.2vw solid black;
+    box-shadow: 0.3vw 0.3vw 0 0 rgb(181, 180, 180);
+    background-color: grey;
+}
+.interest p{
+    display: none;
+}
+.interest h3{
+    margin: 0;
+}
 }
