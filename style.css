@@ -4,7 +4,7 @@
 }
 #helloworld{
     background-image: linear-gradient(to right, white 70%, rgb(216, 203, 203) 30%);
-    height: 90vh;
+    height: 112vh;
     position: relative;
     margin-bottom: 10vw;
     overflow: hidden;
@@ -21,6 +21,11 @@ nav{
     display: flex;
     margin: 0 3vh 0 0;
     gap:4vw;
+    height: 5vw;
+}
+.sociallinks img{
+    height: 100%;
+    width: auto;
 }
 .menu{
     position: absolute;
@@ -147,10 +152,20 @@ footer{
 }
 
 @media (min-width:700px){
+#helloworld{
+    height: 120vh;
+}
+.sociallinks{
+    height: 4vw;
+}
+.sociallinks img{
+    height: 100%;
+    width: auto;
+}
 figure{
     width: 55vw;
     height: auto;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1.2;
     margin: 5vh 8vw auto auto;
 }
 figure img{
