@@ -99,7 +99,7 @@ figure img{
     width: 80%;
     height: 14vh;
     border-radius: 2vw;
-    border: 0.7vw solid black;
+    border: 0.5vw solid black;
     box-shadow: 0.6vw 0.6vw 0 0 rgb(181, 180, 180);
     background-color: grey;
 }
