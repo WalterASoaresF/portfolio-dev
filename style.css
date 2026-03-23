@@ -271,7 +271,19 @@ header{
 header p{
     max-width: 30vw;
 }
-#text{
+main{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+#carousel{
+    margin-top: 20vh;
+    width: 60%;
+    height: 90%;
+}
+}
+@media screen and (min-width:1200px){
+    #text{
     width: 30%;
     height: 70%;
     display: flex;
@@ -326,14 +338,5 @@ header p{
   background-color: rgb(236, 222, 222);
   cursor:pointer;
 }
-main{
-    display: flex;
-    align-items: center;
-    height: 90vh;
-}
-#carousel{
-    margin-top: 20vh;
-    width: 60%;
-    height: 90%;
-}
+
 }
